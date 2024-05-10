@@ -1,0 +1,72 @@
+const mongoose = require('mongoose')
+require('dotenv').config()
+
+const connection = mongoose.connect(process.env.mongoURL)
+
+module.exports = connection
+
+// db.subjects.insertMany(
+//     [
+//         { "name": "Literature", "field": "Arts" },
+//         { "name": "History", "field": "Arts" },
+//         { "name": "Philosophy", "field": "Arts" },
+//         { "name": "Languages", "field": "Arts" },
+//         { "name": "Fine Arts", "field": "Arts" },
+//         { "name": "Performing Arts", "field": "Arts" },
+//         { "name": "Sociology", "field": "Arts" },
+//         { "name": "Psychology", "field": "Arts" },
+//         { "name": "Anthropology", "field": "Arts" },
+//         { "name": "Archaeology", "field": "Arts" },
+//         { "name": "Cultural Studies", "field": "Arts" },
+//         { "name": "Religious Studies", "field": "Arts" },
+//         { "name": "Political Science", "field": "Arts" },
+//         { "name": "Economics", "field": "Arts" },
+//         { "name": "Geography", "field": "Arts" },
+//         { "name": "Linguistics", "field": "Arts" },
+//         { "name": "Media Studies", "field": "Arts" },
+//         { "name": "Communication Studies", "field": "Arts" },
+//         { "name": "Creative Writing", "field": "Arts" },
+//         { "name": "Gender Studies", "field": "Arts" },
+//         { "name": "Accounting", "field": "Commerce" },
+//         { "name": "Economics", "field": "Commerce" },
+//         { "name": "Business Studies", "field": "Commerce" },
+//         { "name": "Finance", "field": "Commerce" },
+//         { "name": "Marketing", "field": "Commerce" },
+//         { "name": "Management", "field": "Commerce" },
+//         { "name": "Entrepreneurship", "field": "Commerce" },
+//         { "name": "Taxation", "field": "Commerce" },
+//         { "name": "Business Law", "field": "Commerce" },
+//         { "name": "Statistics", "field": "Commerce" },
+//         { "name": "Organizational Behavior", "field": "Commerce" },
+//         { "name": "Human Resource Management", "field":"Commerce" },
+//         { "name": "Operations Management", "field": "Commerce" },
+//         { "name": "Supply Chain Management", "field": "Commerce" },
+//         { "name": "International Business", "field": "Commerce" },
+//         { "name": "Strategic Management", "field": "Commerce" },
+//         { "name": "Corporate Governance", "field": "Commerce" },
+//         { "name": "Risk Management", "field": "Commerce" },
+//         { "name": "Financial Management", "field": "Commerce" },
+//         { "name": "E-commerce", "field": "Commerce" },
+//         { "name": "Mathematics", "field": "Engineering" },
+//         { "name": "Physics", "field": "Engineering" },
+//         { "name": "Chemistry", "field": "Engineering" },
+//         { "name": "Computer Science", "field": "Engineering" },
+//         { "name": "Engineering Drawing and Graphics", "field": "Engineering" },
+//         { "name": "Mechanics", "field": "Engineering" },
+//         { "name": "Thermodynamics", "field": "Engineering" },
+//         { "name": "Electrical Circuits", "field": "Engineering" },
+//         { "name": "Material Science", "field": "Engineering" },
+//         { "name": "Engineering Design", "field": "Engineering" },
+//         { "name": "Fluid Mechanics", "field": "Engineering" },
+//         { "name": "Heat Transfer", "field": "Engineering" },
+//         { "name": "Control Systems", "field": "Engineering" },
+//         { "name": "Signal Processing", "field": "Engineering" },
+//         { "name": "Structural Analysis", "field": "Engineering" },
+//         { "name": "Environmental Engineering", "field": "Engineering" },
+//         { "name": "Transportation Engineering", "field": "Engineering" },
+//         { "name": "Robotics", "field": "Engineering" },
+//         { "name": "Manufacturing Processes", "field": "Engineering" },
+//         { "name": "Project Management", "field": "Engineering" }
+//         ]
+// );
+  
