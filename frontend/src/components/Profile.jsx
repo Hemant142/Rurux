@@ -14,7 +14,7 @@ export default function Profile() {
 
   const fetchUser = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/university/${userID}`, {
+      const response = await axios.get(`https://jungle-green-rattlesnake-gear.cyclic.app/university/${userID}`, {
         headers: {
           Authorization: token,
         },
@@ -43,7 +43,7 @@ export default function Profile() {
 
   const saveChanges = async () => {
     try {
-      const response = await axios.put(`http://localhost:8080/university/${userID}`, editedUser, {
+      const response = await axios.put(`https://jungle-green-rattlesnake-gear.cyclic.app/university/${userID}`, editedUser, {
         headers: {
           Authorization: token,
         },

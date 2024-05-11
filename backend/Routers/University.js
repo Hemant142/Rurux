@@ -84,7 +84,7 @@ universityRouter.post("/login", async (req, res) => {
       if (email === "admin@gmail.com" && password === "admin@123") {
         // Hardcoded token for admin
         const adminToken = jwt.sign({ userType: "admin" }, process.env.SecretKey, { expiresIn: '1h' });
-        res.status(200).send({ message: "Admin logged in successfully!", token: adminToken });
+        res.status(200).send({ message: "Admin logged in successfully!", token: adminToken, userType:"admin@123" });
       } else {
         // Regular user login
         const user = await Student.findOne({ email });

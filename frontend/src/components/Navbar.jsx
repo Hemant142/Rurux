@@ -30,7 +30,7 @@ export const Navbar = () => {
   const handleLogout = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/university/logout",
+        "https://jungle-green-rattlesnake-gear.cyclic.app/university/logout",
         {
           headers: {
             Authorization: token,

@@ -19,7 +19,7 @@ export const Login = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8080/university/login", formData);
+      const response = await axios.post("https://jungle-green-rattlesnake-gear.cyclic.app/university/login", formData);
 
       console.log(response, "huyehs")
       if (response.status === 200) {

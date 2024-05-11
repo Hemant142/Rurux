@@ -16,11 +16,12 @@ export default function Admin() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/university', {
+        const response = await axios.get('https://jungle-green-rattlesnake-gear.cyclic.app/university', {
           headers: {
             Authorization: token,
           },
         });
+        console.log(response,"oiuhe")
         setStudentsData(response.data.students);
       } catch (error) {
         console.error('Error fetching student data:', error);
@@ -37,7 +38,7 @@ export default function Admin() {
   const handleEdit = async (studentId, field, value) => {
     console.log(studentId, field, value, "EDIT");
     try {
-      const response = await axios.put(`http://localhost:8080/university/admin/${studentId}`, { [field]: value }, {
+      const response = await axios.put(`https://api-rurux.onrender.com/university/admin/${studentId}`, { [field]: value }, {
         headers: {
           Authorization: token,
         },
@@ -65,7 +66,7 @@ export default function Admin() {
   const handleEditSubject = async (studentId, subjectId, marks) => {
 
     try {
-      const response = await axios.put(`http://localhost:8080/university/admin/marks/${studentId}/${subjectId}`, { marks }, {
+      const response = await axios.put(`https://jungle-green-rattlesnake-gear.cyclic.app/university/admin/marks/${studentId}/${subjectId}`, { marks }, {
         headers: {
           Authorization: token,
         },

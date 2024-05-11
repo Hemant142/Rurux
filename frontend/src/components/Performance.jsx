@@ -13,10 +13,11 @@ export default function Performance() {
   const userID = Cookies.get('userId');
   const token = Cookies.get('token');
 
+  console.log(userID)
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:8080/university/${userID}`, {
+        const response = await axios.get(`https://jungle-green-rattlesnake-gear.cyclic.app/university/${userID}`, {
           headers: {
             Authorization: token,
           },

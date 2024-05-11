@@ -19,7 +19,7 @@ export const SignIn = () => {
     event.preventDefault();
     
     try {
-      const response = await axios.post("http://localhost:8080/university/register", formData);
+      const response = await axios.post("https://jungle-green-rattlesnake-gear.cyclic.app/university/register", formData);
 
       if (response.status === 201) {
         // Handle success
